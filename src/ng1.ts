@@ -15,8 +15,6 @@ import '@c8y/ng1-modules/platformConfiguration/cumulocity.json';
 import '@c8y/ng1-modules/dataBroker/cumulocity.json';
 import '@c8y/ng1-modules/tenantPolicies/cumulocity.json';
 import '@c8y/ng1-modules/tenantLicenses/cumulocity.json';
-import '@c8y/ng1-modules/actilityProviderSettings/cumulocity.json';
-import '@c8y/ng1-modules/sigfox-provider-settings/cumulocity.json';
 import '@c8y/ng1-modules/enterpriseEdition/cumulocity.json';
 import '@c8y/ng1-modules/app-status-ui/cumulocity.json';
 import '@c8y/ng1-modules/app-logs/cumulocity.json';
