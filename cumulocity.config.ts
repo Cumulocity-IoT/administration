@@ -49,7 +49,10 @@ export default {
         description: gettext('Allows to edit the plain JSON of the branding.'),
         scope: 'self'
       }
-    ]
+    ],
+    remotes: {
+      [`c8y-timeseries-migration-plugin@${version.split('.')[0]}-stable`]: ['TimeseriesModule']
+    }
   },
   buildTime: {
     federation: [
