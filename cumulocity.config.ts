@@ -48,6 +48,13 @@ export default {
         path: '@c8y/ngx-components/branding/plain-branding-editor',
         description: gettext('Allows to edit the plain JSON of the branding.'),
         scope: 'self'
+      },
+      {
+        module: 'tranlationEditorProviders',
+        name: gettext('Translation editor'),
+        path: '@c8y/ngx-components/translation-editor',
+        description: gettext('Allows to edit translations.'),
+        scope: 'self'
       }
     ],
     remotes: {
