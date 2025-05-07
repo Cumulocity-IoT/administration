@@ -55,6 +55,13 @@ export default {
         path: '@c8y/ngx-components/translation-editor',
         description: gettext('Allows to edit translations.'),
         scope: 'self'
+      },
+      {
+        name: gettext('Messaging service - monitoring & management'),
+        module: 'MessagingManagementModule',
+        path: '@c8y/ngx-components/messaging-management',
+        description: gettext('Allows to monitor and manage the usage of messaging service.'),
+        scope: 'self'
       }
     ],
     remotes: {
