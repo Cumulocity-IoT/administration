@@ -17,7 +17,6 @@ import '@c8y/ng1-modules/tenantLicenses/cumulocity.json';
 import '@c8y/ng1-modules/enterpriseEdition/cumulocity.json';
 import '@c8y/ng1-modules/app-status-ui/cumulocity.json';
 import '@c8y/ng1-modules/app-logs/cumulocity.json';
-import '@c8y/ng1-modules/remoteAccess/cumulocity.json';
 import '@c8y/ng1-modules/administration-homeAdministration/cumulocity.json';
 import '@c8y/ng1-modules/administration-applicationSettings/cumulocity.json';
 import '@c8y/ng1-modules/administration-alarmMapping/cumulocity.json';

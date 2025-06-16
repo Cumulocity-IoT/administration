@@ -1,5 +1,5 @@
 import type { ConfigurationOptions } from '@c8y/devkit';
-import { author, description, version, name } from './package.json';
+import { author, description, version, name, license } from './package.json';
 import { gettext } from '@c8y/ngx-components/gettext';
 
 const defaultDescription = gettext(
@@ -17,6 +17,7 @@ export default {
     tabsHorizontal: true,
     dynamicOptionsUrl: true,
     contextHelp: true,
+    license,
     contentSecurityPolicy:
       "base-uri 'none'; default-src 'self' 'unsafe-inline' http: https: ws: wss:; connect-src 'self' http: https: ws: wss:;  script-src 'self' *.bugherd.com *.twitter.com *.twimg.com *.aptrinsic.com  'unsafe-inline' 'unsafe-eval' data:; style-src * 'unsafe-inline' blob:; media-src 'self' blob:; img-src * data: blob:; font-src * data:; frame-src *; worker-src 'self' blob:;",
     upgrade: true,
