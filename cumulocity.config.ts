@@ -63,13 +63,6 @@ export default {
         path: '@c8y/ngx-components/messaging-management',
         description: gettext('Allows to monitor and manage the usage of messaging service.'),
         scope: 'self'
-      },
-      {
-        name: gettext('Feature toggles'),
-        module: 'featureToggleProviders',
-        path: '@c8y/ngx-components/feature-toggles',
-        description: gettext('Allows to manage feature toggles for the tenant.'),
-        scope: 'self'
       }
     ],
     remotes: {
