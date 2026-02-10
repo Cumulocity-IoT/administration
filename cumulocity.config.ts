@@ -5,6 +5,8 @@ import { gettext } from '@c8y/ngx-components/gettext';
 const defaultDescription = gettext(
   'The Administration application enables account administrators to manage their users, roles, tenants, applications and business rules and lets them configure a number of settings for their account.'
 );
+const majorWebSDKVersion = version.split('.')[0];
+const stableTagBasedOnWebSDKVersion = `${majorWebSDKVersion}-stable`;
 
 export default {
   runTime: {
@@ -73,7 +75,8 @@ export default {
       }
     ],
     remotes: {
-      [`c8y-timeseries-migration-plugin@${version.split('.')[0]}-stable`]: ['TimeseriesModule']
+      [`c8y-timeseries-migration-plugin@${stableTagBasedOnWebSDKVersion}`]: ['TimeseriesModule'],
+      [`ai-plugins@${stableTagBasedOnWebSDKVersion}`]: ['AiManagerModule']
     }
   },
   buildTime: {
