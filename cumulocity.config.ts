@@ -72,6 +72,13 @@ export default {
         path: '@c8y/ngx-components/feature-toggles',
         description: gettext('Allows to manage feature toggles for the tenant.'),
         scope: 'self'
+      },
+      {
+        name: gettext('User application access management'),
+        module: 'userApplicationAccessProviders',
+        path: '@c8y/ngx-components/application-access/user',
+        description: gettext('Allows to manage user application access.'),
+        scope: 'self'
       }
     ],
     remotes: {
