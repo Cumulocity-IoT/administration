@@ -67,6 +67,13 @@ export default {
         scope: 'self'
       },
       {
+        name: gettext('Data Preparation'),
+        module: 'DataPrepPreviewModule',
+        path: '@c8y/ngx-components/data-preparation',
+        description: gettext('Allows access to the Data Preparation application.'),
+        scope: 'self'
+      },
+      {
         name: gettext('Feature toggles'),
         module: 'featureToggleProviders',
         path: '@c8y/ngx-components/feature-toggles',
