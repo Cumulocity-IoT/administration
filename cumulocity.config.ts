@@ -3,7 +3,7 @@ import { author, description, version, name, license } from './package.json';
 import { gettext } from '@c8y/ngx-components/gettext';
 
 const defaultDescription = gettext(
-  'The Administration application enables account administrators to manage their users, roles, tenants, applications and business rules and lets them configure a number of settings for their account.'
+  'The Administration application enables account administrators to manage their users, roles, tenants, applications and business rules and lets them configure a number of settings for their account.',
 );
 const majorWebSDKVersion = version.split('.')[0];
 const stableTagBasedOnWebSDKVersion = `${majorWebSDKVersion}-stable`;
@@ -29,69 +29,69 @@ export default {
         name: gettext('Branding base editor'),
         path: '@c8y/ngx-components/branding/base-branding',
         description: gettext('Allows to make basic changes to the tenants branding.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         module: 'DarkThemeModule',
         name: gettext('Branding dark theme editor'),
         path: '@c8y/ngx-components/branding/dark-theme',
         description: gettext('Allows editing the dark theme variables.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         module: 'ExtraCssBrandingEditorModule',
         name: gettext('Branding custom CSS editor'),
         path: '@c8y/ngx-components/branding/extra-css-branding-editor',
         description: gettext('Allows to add and edit a custom style sheet to the branding.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         module: 'PlainBrandingEditorModule',
         name: gettext('Branding JSON editor'),
         path: '@c8y/ngx-components/branding/plain-branding-editor',
         description: gettext('Allows to edit the plain JSON of the branding.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         module: 'tranlationEditorProviders',
         name: gettext('Translation editor'),
         path: '@c8y/ngx-components/translation-editor',
         description: gettext('Allows to edit translations.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         name: gettext('Messaging service - monitoring & management'),
         module: 'MessagingManagementModule',
         path: '@c8y/ngx-components/messaging-management',
         description: gettext('Allows to monitor and manage the usage of messaging service.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         name: gettext('Data Preparation'),
         module: 'DataPrepPreviewModule',
         path: '@c8y/ngx-components/data-preparation',
         description: gettext('Allows access to the Data Preparation application.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         name: gettext('Feature toggles'),
         module: 'featureToggleProviders',
         path: '@c8y/ngx-components/feature-toggles',
         description: gettext('Allows to manage feature toggles for the tenant.'),
-        scope: 'self'
+        scope: 'self',
       },
       {
         name: gettext('User application access management'),
         module: 'userApplicationAccessProviders',
         path: '@c8y/ngx-components/application-access/user',
         description: gettext('Allows to manage user application access.'),
-        scope: 'self'
-      }
+        scope: 'self',
+      },
     ],
     remotes: {
       [`c8y-timeseries-migration-plugin@${stableTagBasedOnWebSDKVersion}`]: ['TimeseriesModule'],
-      [`ai-plugins@${stableTagBasedOnWebSDKVersion}`]: ['AiManagerModule']
-    }
+      [`ai-plugins@${stableTagBasedOnWebSDKVersion}`]: ['AiManagerModule'],
+    },
   },
   buildTime: {
     federation: [
@@ -110,7 +110,7 @@ export default {
       'angular',
       'ngx-bootstrap',
       '@ngx-translate/core',
-      '@ngx-formly/core'
-    ]
-  }
+      '@ngx-formly/core',
+    ],
+  },
 } as const satisfies ConfigurationOptions;

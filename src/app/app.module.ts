@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, provideZoneChangeDetection } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpgradeModule as NgUpgradeModule } from '@angular/upgrade/static';
 import { CoreModule, RouterModule } from '@c8y/ngx-components';
@@ -40,8 +40,9 @@ import { BookmarksModule } from '@c8y/ngx-components/bookmarks';
     MultipleLnsConnectorsModule,
     UserRolesModule,
     BookmarksModule,
-    PlatformConfigurationModule
-  ]
+    PlatformConfigurationModule,
+  ],
+  providers: [provideZoneChangeDetection()],
 })
 export class AppModule extends HybridAppModule {
   constructor(protected override upgrade: NgUpgradeModule) {
