@@ -91,6 +91,9 @@ export default {
     remotes: {
       [`c8y-timeseries-migration-plugin@${stableTagBasedOnWebSDKVersion}`]: ['TimeseriesModule'],
       [`ai-plugins@${stableTagBasedOnWebSDKVersion}`]: ['AiManagerModule'],
+      [`offloading-settings-plugin@${stableTagBasedOnWebSDKVersion}`]: [
+        'pluginProvidersForSettings',
+      ],
     },
   },
   buildTime: {
