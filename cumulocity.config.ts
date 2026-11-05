@@ -94,6 +94,9 @@ export default {
       [`offloading-settings-plugin@${stableTagBasedOnWebSDKVersion}`]: [
         'pluginProvidersForSettings',
       ],
+      [`dtm-plugins@${stableTagBasedOnWebSDKVersion}`]: [
+        'AdministrationTenantPropertyLibraryModule',
+      ],
     },
   },
   buildTime: {

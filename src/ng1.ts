@@ -9,7 +9,6 @@ import '@c8y/ng1-modules/tenantApplications/cumulocity.json';
 import '@c8y/ng1-modules/tenantStatistics/cumulocity.json';
 import '@c8y/ng1-modules/roles/cumulocity.json';
 import '@c8y/ng1-modules/userRoles/cumulocity.json';
-import '@c8y/ng1-modules/propertiesLibrary/cumulocity.json';
 import '@c8y/ng1-modules/platformConfiguration/cumulocity.json';
 import '@c8y/ng1-modules/dataBroker/cumulocity.json';
 import '@c8y/ng1-modules/tenantPolicies/cumulocity.json';
